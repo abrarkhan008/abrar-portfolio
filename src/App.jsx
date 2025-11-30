@@ -61,7 +61,7 @@ export default function Portfolio() {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/abrarkhan",
+      url: "https://github.com/abrarkhan008",
       color: "hover:text-gray-300",
       bgColor: "hover:bg-gray-500/10",
     },
@@ -195,9 +195,12 @@ export default function Portfolio() {
             </h2>
 
             <p className="text-xl text-gray-300 leading-relaxed">
-              Final-year Information Science student passionate about creating
-              exceptional digital experiences. Specialized in React, Node.js,
-              and modern web technologies.
+              Hi... I’m Abrar Khan, a MERN Stack Developer skilled in building
+              clean, responsive, and modern front-end interfaces using React,
+              Tailwind CSS, and JavaScript. I also work on backend development
+              with Node.js, Express, and MongoDB, creating efficient and secure
+              APIs. I’m looking for an opportunity to apply my skills, grow
+              professionally, and contribute effectively to the team.
             </p>
 
             {/* Social Links Large Buttons */}
@@ -265,10 +268,12 @@ export default function Portfolio() {
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl opacity-20 blur-xl animate-pulse-slow"></div>
 
               {/* Main photo container */}
-              <div className="relative w-64 h-80 rounded-xl overflow-hidden border border-slate-600 bg-gradient-to-br from-slate-800 to-slate-900 shadow-2xl">
-                <div className="w-full h-full bg-gradient-to-br from-blue-600/10 to-purple-600/10 flex items-center justify-center">
-                  <div className="text-6xl font-bold text-blue-300/40">AK</div>
-                </div>
+              <div className="relative w-80 h-96 rounded-xl overflow-hidden border border-slate-600 bg-gradient-to-br from-slate-800 to-slate-900 shadow-2xl">
+                <img
+                  src="/suit.jpg"
+                  alt="Abrar"
+                  className="w-full h-full object-cover object-center"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
               </div>
 
