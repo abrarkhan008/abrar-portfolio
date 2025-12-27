@@ -516,7 +516,7 @@ export default function Portfolio() {
             Featured Projects
           </h2>
 
-          <div className="space-y-8">
+          {/* <div className="space-y-8">
             {[
               {
                 title:
@@ -590,6 +590,203 @@ export default function Portfolio() {
                     </span>
                   ))}
                 </div>
+              </div>
+            ))} */}
+          <div className="space-y-8">
+            {[
+              {
+                title:
+                  "Feedback Mechanism in Public Speaking using Audio and Video Analysis",
+                points: [
+                  "Built a real-time feedback system analyzing facial expressions and voice using OpenCV and audio tools",
+                  "Trained ML models to detect emotions and engagement levels from audio-visual input",
+                  "Developed a web interface using Flask/Django for actionable feedback",
+                  "Implemented sentiment, pitch, and expression analysis for speaker performance",
+                ],
+                tech: ["Python", "OpenCV", "TensorFlow", "Flask/Django"],
+                gradient: "from-blue-600 to-blue-400",
+              },
+              {
+                title: "Professional Portfolio Websites",
+                points: [
+                  "Designed and developed multiple portfolio websites with modern UI/UX",
+                  "Created responsive layouts with smooth animations and transitions",
+                  "Implemented contact forms and social media integrations",
+                ],
+                tech: ["React", "Tailwind CSS", "Vercel"],
+                gradient: "from-purple-600 to-purple-400",
+                links: [
+                  {
+                    name: "Ayub Portfolio",
+                    url: "https://ayub-portfolio-97cm.vercel.app/",
+                  },
+                  {
+                    name: "Mehek Portfolio",
+                    url: "https://mehek-portfolio-wy27.vercel.app/",
+                  },
+                ],
+              },
+              {
+                title: "Mehendi Design Business Websites",
+                points: [
+                  "Built professional websites for mehendi artists to showcase their work",
+                  "Integrated gallery sections with image optimization",
+                  "Added booking and contact features for client engagement",
+                ],
+                tech: ["React", "Next.js", "Tailwind CSS"],
+                gradient: "from-pink-600 to-pink-400",
+                links: [
+                  {
+                    name: "MS Mehendi Portfolio",
+                    url: "https://ms-mehendi-portfolio.vercel.app/",
+                  },
+                  {
+                    name: "Henna by Nazu",
+                    url: "https://henna-by-nazu-qh5x.vercel.app/",
+                  },
+                ],
+              },
+              {
+                title: "Electrician Business Website",
+                points: [
+                  "Developed a professional website for electrical services",
+                  "Created service showcase with pricing and contact information",
+                  "Implemented responsive design for mobile and desktop users",
+                ],
+                tech: ["React", "Tailwind CSS", "Vercel"],
+                gradient: "from-yellow-600 to-yellow-400",
+                links: [
+                  {
+                    name: "Yaseen Electrician",
+                    url: "https://yaseen-portfolio-chi.vercel.app/",
+                  },
+                ],
+              },
+              {
+                title: "JK Fancy Store Management System",
+                points: [
+                  "Built a comprehensive store management system with billing features",
+                  "Implemented live attendance tracking with location-based verification",
+                  "Created multi-branch management with real-time bill calculation",
+                  "Designed admin dashboard for inventory and sales tracking",
+                ],
+                tech: ["React", "Firebase", "Geolocation API", "Netlify"],
+                gradient: "from-green-600 to-green-400",
+                links: [
+                  {
+                    name: "JK Fancy Store",
+                    url: "https://jk-fancy-store.netlify.app/",
+                  },
+                ],
+              },
+              {
+                title: "Engagement Ceremony Invitation",
+                points: [
+                  "Designed an elegant digital invitation card for engagement ceremony",
+                  "Integrated date, time, and location details with map integration",
+                  "Created responsive design with beautiful animations",
+                ],
+                tech: ["React", "Tailwind CSS", "Vercel"],
+                gradient: "from-rose-600 to-rose-400",
+                links: [
+                  {
+                    name: "Engagement Invitation",
+                    url: "https://engagement-ceremony-alpha.vercel.app/",
+                  },
+                ],
+              },
+              {
+                title: "Makeup Artist Professional Website",
+                points: [
+                  "Created a stunning portfolio website for professional makeup artist",
+                  "Integrated booking system and service showcase",
+                  "Implemented before/after gallery with smooth transitions",
+                ],
+                tech: ["React", "Next.js", "Tailwind CSS"],
+                gradient: "from-purple-600 to-pink-400",
+                links: [
+                  {
+                    name: "Siddiqu Tarannum",
+                    url: "https://siddiquatarannum.in/",
+                  },
+                ],
+              },
+              {
+                title: "E-Commerce Website",
+                points: [
+                  "Developed an e-commerce site using React, Redux Toolkit, and Firebase",
+                  "Implemented cart persistence, billing, and order management",
+                  "Enhanced UX using react-toastify for notifications",
+                ],
+                tech: ["React", "Redux", "Firebase"],
+                gradient: "from-indigo-600 to-indigo-400",
+              },
+              {
+                title: "Task Manager",
+                points: [
+                  "Built a full-stack task management app for CRUD operations and categorization",
+                  "Implemented secure REST APIs using Express.js and hosted data on MongoDB Atlas",
+                  "Designed responsive UI with Tailwind CSS and optimized rendering via Vite",
+                  "Added task status indicators, filtering, and form validation for UX improvement",
+                ],
+                tech: [
+                  "React",
+                  "Vite",
+                  "Tailwind CSS",
+                  "MongoDB Atlas",
+                  "Express.js",
+                ],
+                gradient: "from-cyan-600 to-cyan-400",
+              },
+            ].map((project, idx) => (
+              <div
+                key={idx}
+                className="p-8 bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-700 hover:border-slate-600 transition-all duration-300 hover:transform hover:scale-[1.02]"
+              >
+                <h3
+                  className={`text-2xl font-bold mb-4 bg-gradient-to-r ${project.gradient} bg-clip-text text-transparent`}
+                >
+                  {project.title}
+                </h3>
+                <ul className="space-y-3 mb-6">
+                  {project.points.map((point, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-3 text-gray-300"
+                    >
+                      <span className="text-blue-400 mt-1 flex-shrink-0">
+                        ▹
+                      </span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tech.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="px-4 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full text-sm font-medium border border-blue-500/20 text-gray-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                {project.links && (
+                  <div className="flex flex-wrap gap-3 pt-4 border-t border-slate-700">
+                    {project.links.map((link, i) => (
+                      <a
+                        key={i}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-blue-500/30 transform hover:scale-105 transition-all duration-300"
+                      >
+                        <ExternalLink size={16} />
+                        {link.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
