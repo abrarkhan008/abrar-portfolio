@@ -606,6 +606,35 @@ export default function Portfolio() {
                 tech: ["Python", "OpenCV", "TensorFlow", "Flask/Django"],
                 gradient: "from-blue-600 to-blue-400",
               },
+               {
+                title: "Makeup Artist Professional Website",
+                points: [
+                  "Created a stunning portfolio website for professional makeup artist",
+                  "Integrated booking system and service showcase",
+                  "Implemented before/after gallery with smooth transitions",
+                ],
+                tech: ["React", "Next.js", "Tailwind CSS"],
+                gradient: "from-purple-600 to-pink-400",
+                links: [
+                  {
+                    name: "Sana Beauty",
+                    url: "https://sana-beauty.vercel.app/",
+                  },
+                  {
+                    name: "Ladies Choice – Tenali",
+                    url: "https://ladies-choice-now-in-tenali-bdbv.vercel.app/",
+                  },
+                  {
+                    name: "Siddiqu Tarannum",
+                    url: "https://siddiquatarannum.in/",
+                  },
+                  {
+                    name: "Makeover by Harshitha",
+                    url: "https://makeoverbyharshitha.com/?fbclid=PAT01DUAPHZo9leHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadfnGUqmci_IjiY8jPqYkmEj-IISLhKYl1fKq8N__vrYw0uqVFFuuonLfcKMA_aem_7MoSgrf9wyVrZwk4Peevpg",
+                  },
+                ],
+              },
+
               {
                 title: "Professional Portfolio Websites",
                 points: [
@@ -695,22 +724,35 @@ export default function Portfolio() {
                   },
                 ],
               },
-              {
-                title: "Makeup Artist Professional Website",
-                points: [
-                  "Created a stunning portfolio website for professional makeup artist",
-                  "Integrated booking system and service showcase",
-                  "Implemented before/after gallery with smooth transitions",
-                ],
-                tech: ["React", "Next.js", "Tailwind CSS"],
-                gradient: "from-purple-600 to-pink-400",
-                links: [
-                  {
-                    name: "Siddiqu Tarannum",
-                    url: "https://siddiquatarannum.in/",
-                  },
-                ],
-              },
+              // {
+              //   title: "Makeup Artist Professional Website",
+              //   points: [
+              //     "Created a stunning portfolio website for professional makeup artist",
+              //     "Integrated booking system and service showcase",
+              //     "Implemented before/after gallery with smooth transitions",
+              //   ],
+              //   tech: ["React", "Next.js", "Tailwind CSS"],
+              //   gradient: "from-purple-600 to-pink-400",
+              //   links: [
+              //     {
+              //       name: "Sana Beauty",
+              //       url: "https://sana-beauty.vercel.app/",
+              //     },
+              //     {
+              //       name: "Ladies Choice – Tenali",
+              //       url: "https://ladies-choice-now-in-tenali-bdbv.vercel.app/",
+              //     },
+              //     {
+              //       name: "Siddiqu Tarannum",
+              //       url: "https://siddiquatarannum.in/",
+              //     },
+              //     {
+              //       name: "Makeover by Harshitha",
+              //       url: "https://makeoverbyharshitha.com/?fbclid=PAT01DUAPHZo9leHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadfnGUqmci_IjiY8jPqYkmEj-IISLhKYl1fKq8N__vrYw0uqVFFuuonLfcKMA_aem_7MoSgrf9wyVrZwk4Peevpg",
+              //     },
+              //   ],
+              // },
+
               {
                 title: "E-Commerce Website",
                 points: [
