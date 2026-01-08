@@ -606,7 +606,7 @@ export default function Portfolio() {
                 tech: ["Python", "OpenCV", "TensorFlow", "Flask/Django"],
                 gradient: "from-blue-600 to-blue-400",
               },
-               {
+              {
                 title: "Makeup Artist Professional Website",
                 points: [
                   "Created a stunning portfolio website for professional makeup artist",
@@ -665,6 +665,10 @@ export default function Portfolio() {
                 tech: ["React", "Next.js", "Tailwind CSS"],
                 gradient: "from-pink-600 to-pink-400",
                 links: [
+                  {
+                    name: "Khanam Artistry",
+                    url: "https://khanam-artistry.vercel.app/",
+                  },
                   {
                     name: "MS Mehendi Portfolio",
                     url: "https://ms-mehendi-portfolio.vercel.app/",
