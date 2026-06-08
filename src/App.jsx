@@ -56,7 +56,7 @@ export default function App() {
                 </p>
                 <a
                   href="/"
-                  className="px-6 py-3 bg-yellow-400 text-black rounded-full font-bold hover:bg-yellow-300 transition-all"
+                  className="px-6 py-3 bg-blue-400 text-black rounded-full font-bold hover:bg-blue-300 transition-all"
                 >
                   Go Home
                 </a>

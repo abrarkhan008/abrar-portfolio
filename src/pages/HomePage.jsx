@@ -87,17 +87,24 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Background glow effects */}
         <div className="absolute inset-0 pointer-events-none">
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-15"
+            style={{
+              backgroundImage: "url('/bg1.png')",
+            }}
+          />
+
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500/8 rounded-full blur-3xl"></div>
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/8 rounded-full blur-3xl"></div>
-          {/* Grid lines */}
+
           <div
-            className="absolute inset-0 opacity-5"
+            className="absolute inset-0 opacity-10"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(245,200,66,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(245,200,66,0.3) 1px, transparent 1px)",
+                "linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px)",
               backgroundSize: "80px 80px",
             }}
-          ></div>
+          />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
@@ -194,9 +201,26 @@ export default function HomePage() {
       </section>
 
       {/* ===== WHY CHOOSE ME ===== */}
-      <section className="py-20 px-4 bg-gradient-to-r from-yellow-500/5 to-transparent">
-        <div className="max-w-5xl mx-auto">
+      <section className="relative py-20 px-4">
+        {/* Background Image Layer */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "url('/bg2.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.25,
+            filter: "blur(2px)",
+          }}
+        ></div>
+
+        {/* Dark overlay for readability */}
+        {/* <div className="absolute inset-0 bg-[#001a33]/80"></div> */}
+
+        {/* Content */}
+        <div className="relative max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left side */}
             <div>
               <h2 className="font-display text-4xl font-bold text-white mb-4">
                 Why Clients <span className="text-yellow-400">Choose Me</span>
@@ -205,6 +229,7 @@ export default function HomePage() {
                 I don't just build websites — I help your business grow with
                 professional digital presence that actually works.
               </p>
+
               <div className="space-y-3">
                 {reasons.map((r, i) => (
                   <div key={i} className="flex items-center gap-3">
@@ -218,15 +243,17 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Contact card */}
+            {/* Right card */}
             <div className="glass rounded-3xl p-8 gold-border gold-glow">
               <h3 className="font-display text-2xl font-bold text-yellow-400 mb-2">
                 Ready to Start? 🚀
               </h3>
+
               <p className="text-gray-400 mb-6 text-sm">
                 Tell me about your business and I'll build something amazing for
                 you!
               </p>
+
               <div className="space-y-3">
                 <a
                   href="https://wa.me/919380195144?text=Hi%20Abrar!%20I%20need%20help%20with%20my%20business."
@@ -236,6 +263,7 @@ export default function HomePage() {
                 >
                   💬 WhatsApp — 9380195144
                 </a>
+
                 <a
                   href="https://www.instagram.com/abrarkhan__008"
                   target="_blank"
@@ -244,6 +272,7 @@ export default function HomePage() {
                 >
                   📸 Instagram — @abrarkhan__008
                 </a>
+
                 <a
                   href="mailto:abrarhayathkhan1234@gmail.com"
                   className="flex items-center gap-3 w-full px-5 py-3 glass gold-border text-white rounded-xl font-semibold hover:scale-105 transition-all"
