@@ -15,6 +15,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 // Import all pages
+import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import WebsitesPage from "./pages/WebsitesPage";
 import BrochuresPage from "./pages/BrochuresPage";
@@ -32,6 +33,7 @@ export default function App() {
 
       {/* Page content changes based on URL */}
       <Routes>
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/websites" element={<WebsitesPage />} />
         <Route path="/brochures" element={<BrochuresPage />} />

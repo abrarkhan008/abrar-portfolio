@@ -74,10 +74,10 @@ const reasons = [
 
 // ---- STATS — change numbers if needed ----
 const stats = [
-  { num: "50+", label: "Projects Done" },
-  { num: "30+", label: "Happy Clients" },
+  { num: "20+", label: "Projects Done" },
+  { num: "10+", label: "Happy Clients" },
   { num: "5★", label: "Rating" },
-  { num: "3yrs", label: "Experience" },
+  { num: "1yrs", label: "Experience" },
 ];
 
 export default function HomePage() {
@@ -86,26 +86,15 @@ export default function HomePage() {
       {/* ===== HERO SECTION ===== */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Background glow effects */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-15"
-            style={{
-              backgroundImage: "url('/bg1.png')",
-            }}
-          />
-
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500/8 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/8 rounded-full blur-3xl"></div>
-
-          <div
-            className="absolute inset-0 opacity-10"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px)",
-              backgroundSize: "80px 80px",
-            }}
-          />
-        </div>
+        <div
+          className="absolute inset-0 opacity-15"
+          style={{
+            backgroundImage: "url('/bg1.png')",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: window.innerWidth < 768 ? "contain" : "cover",
+          }}
+        />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
           {/* Badge */}

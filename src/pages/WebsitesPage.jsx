@@ -13,7 +13,7 @@ const projects = [
     desc: "Professional makeup artist portfolio with booking system and gallery.",
     tags: ["React", "Tailwind", "Makeup Artist"],
     url: "https://sana-beauty.vercel.app/",
-    emoji: "💄",
+    image: "/1w.png",
     gradient: "from-pink-600 to-rose-500",
   },
   {
@@ -21,15 +21,47 @@ const projects = [
     desc: "Beauty parlour website with services and contact integration.",
     tags: ["React", "Next.js", "Beauty"],
     url: "https://ladies-choice-now-in-tenali-bdbv.vercel.app/",
-    emoji: "💅",
+    image: "/2w.png",
     gradient: "from-purple-600 to-pink-500",
+  },
+  {
+    title: "AM Welding",
+    desc: "Professional welding and fabrication business website showcasing services and projects.",
+    tags: ["React", "Business", "Welding"],
+    url: "https://am-welding.vercel.app/",
+    image: "/3w.png",
+    gradient: "from-orange-600 to-red-500",
+  },
+  {
+    title: "Mahnayeem Jewels & Accessories",
+    desc: "Jewelry and accessories showcase website with elegant product presentation.",
+    tags: ["React", "Jewelry", "Business"],
+    url: "https://mahnayeem-jewels-and-accessories-hc.vercel.app/",
+    image: "/4w.png",
+    gradient: "from-yellow-500 to-amber-600",
+  },
+  {
+    title: "Monika Artistry",
+    desc: "Professional makeup artist portfolio with gallery and booking information.",
+    tags: ["React", "Portfolio", "Makeup"],
+    url: "https://monikaaristry-qr1l.vercel.app/",
+    image: "/5w.png",
+    gradient: "from-pink-500 to-rose-600",
+  },
+  {
+    title: "Valentine App",
+    desc: "Interactive Valentine's Day themed web application with modern UI.",
+    tags: ["React", "Fun App", "Interactive"],
+    url: "https://valentine-app-silk.vercel.app/",
+    image: "/6w.png",
+    gradient: "from-rose-500 to-red-600",
   },
   {
     title: "Siddiqu Tarannum",
     desc: "Professional makeup artist website with portfolio and bridal packages.",
     tags: ["React", "Portfolio", "Bridal"],
     url: "https://siddiquatarannum.in/",
-    emoji: "👰",
+    image: "/7w.png",
     gradient: "from-rose-600 to-orange-500",
   },
   {
@@ -37,7 +69,7 @@ const projects = [
     desc: "Makeup artist website showcasing services and before/after transformations.",
     tags: ["React", "Tailwind", "Makeover"],
     url: "https://makeoverbyharshitha.com/",
-    emoji: "🌸",
+    image: "/8w.png",
     gradient: "from-fuchsia-600 to-pink-500",
   },
   {
@@ -45,7 +77,7 @@ const projects = [
     desc: "Modern professional portfolio website with smooth animations.",
     tags: ["React", "Portfolio", "Developer"],
     url: "https://ayub-portfolio-97cm.vercel.app/",
-    emoji: "👨‍💻",
+    image: "/9w.png",
     gradient: "from-blue-600 to-cyan-500",
   },
   {
@@ -53,7 +85,7 @@ const projects = [
     desc: "Elegant personal portfolio with skills and projects showcase.",
     tags: ["React", "Tailwind", "Portfolio"],
     url: "https://mehek-portfolio-wy27.vercel.app/",
-    emoji: "🌟",
+    image: "/10w.png",
     gradient: "from-violet-600 to-purple-500",
   },
   {
@@ -61,7 +93,7 @@ const projects = [
     desc: "Mehendi design business website with gallery and booking form.",
     tags: ["React", "Mehendi", "Gallery"],
     url: "https://khanam-artistry.vercel.app/",
-    emoji: "🌿",
+    image: "/11w.png",
     gradient: "from-green-600 to-teal-500",
   },
   {
@@ -69,7 +101,7 @@ const projects = [
     desc: "Beautiful mehendi artist portfolio with Instagram-style gallery.",
     tags: ["React", "Next.js", "Mehendi"],
     url: "https://ms-mehendi-portfolio.vercel.app/",
-    emoji: "🪷",
+    image: "/12w.png",
     gradient: "from-orange-600 to-amber-500",
   },
   {
@@ -77,7 +109,7 @@ const projects = [
     desc: "Henna art portfolio showcasing designs and pricing packages.",
     tags: ["React", "Henna", "Art"],
     url: "https://henna-by-nazu-qh5x.vercel.app/",
-    emoji: "🎨",
+    image: "/13w.png",
     gradient: "from-amber-600 to-yellow-500",
   },
   {
@@ -85,7 +117,7 @@ const projects = [
     desc: "Professional electrician services website with contact and pricing.",
     tags: ["React", "Services", "Business"],
     url: "https://yaseen-portfolio-chi.vercel.app/",
-    emoji: "⚡",
+    image: "/14w.png",
     gradient: "from-yellow-500 to-orange-500",
   },
   {
@@ -93,7 +125,7 @@ const projects = [
     desc: "Store management system with billing, attendance tracking and multi-branch support.",
     tags: ["React", "Firebase", "Management"],
     url: "https://jk-fancy-store.netlify.app/",
-    emoji: "🏪",
+    image: "/15w.png",
     gradient: "from-green-600 to-emerald-500",
   },
   {
@@ -101,7 +133,7 @@ const projects = [
     desc: "Digital invitation card with date, location and RSVP for engagement ceremony.",
     tags: ["React", "Invitation", "Events"],
     url: "https://engagement-ceremony-alpha.vercel.app/",
-    emoji: "💍",
+    image: "/16w.png",
     gradient: "from-rose-600 to-red-500",
   },
 ];
@@ -131,11 +163,13 @@ export default function WebsitesPage() {
               className="glass rounded-2xl overflow-hidden gold-border hover:border-yellow-400/40 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-yellow-500/10 group"
             >
               {/* Card header with gradient */}
-              <div
-                className={`h-32 bg-gradient-to-br ${p.gradient} flex items-center justify-center text-6xl relative`}
-              >
-                {p.emoji}
-                <div className="absolute inset-0 bg-black/20"></div>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/30"></div>
               </div>
 
               {/* Card body */}

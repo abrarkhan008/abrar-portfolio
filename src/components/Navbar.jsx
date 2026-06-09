@@ -13,6 +13,7 @@ const navLinks = [
   { name: "Work Pics", path: "/work-pics" },
   { name: "Games", path: "/games" },
   { name: "Contact", path: "/contact" },
+  { name: "About", path: "/about" },
 ];
 
 export default function Navbar() {
@@ -44,13 +45,13 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="Logo"
-            className="w-10 h-10 object-contain"
+            className="w-12 h-12 object-contain"
           />
 
-          <Zap size={16} className="text-[#ff9900]" />
+          {/* <Zap size={16} className="text-[#ff9900]" /> */}
 
           <span className="font-bold text-lg text-white">
-            Abrar<span className="text-[#ff9900]">Khan</span>
+            ABRAR <span className="text-[#ff9900]">KHAN</span>
           </span>
         </Link>
 
