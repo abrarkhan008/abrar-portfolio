@@ -147,7 +147,7 @@ export default function HomePage() {
               <img
                 src="/hero-image.png"
                 alt="My design work"
-                className="w-auto h-[280px] sm:h-[380px] md:h-[600px] drop-shadow-2xl animate-fadeUp"
+                className="w-full max-w-[320px] sm:max-w-[420px] md:max-w-[680px] drop-shadow-2xl animate-fadeUp"
               />
             </div>
           </div>
