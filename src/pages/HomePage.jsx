@@ -96,61 +96,72 @@ export default function HomePage() {
           }}
         />
 
-        <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass gold-border text-yellow-400 text-sm mb-8 animate-fadeUp">
-            <Star size={14} fill="currentColor" />
-            <span>Premium Digital Services for Your Business</span>
-          </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4">
+  <div className="grid grid-cols-2 gap-4 md:gap-12 items-center">
 
-          {/* Main headline */}
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight animate-fadeUp">
-            <span className="text-white">Grow Your </span>
-            <span className="animate-shimmer">Business</span>
-            <br />
-            <span className="text-white">With </span>
-            <span className="text-yellow-400">Premium Design</span>
-          </h1>
+    {/* LEFT SIDE — TEXT */}
+    <div className="text-left">
+      {/* Badge */}
+      <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full glass gold-border text-yellow-400 text-xs md:text-sm mb-4 md:mb-8 animate-fadeUp">
+        <Star size={14} fill="currentColor" />
+        <span>Premium Digital Services</span>
+      </div>
 
-          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fadeUp">
-            I create{" "}
-            <strong className="text-white">
-              beautiful websites, brochures, banners & logos
-            </strong>{" "}
-            for startups and small businesses. Your brand deserves to look
-            amazing! 🚀
-          </p>
+      {/* Headline */}
+      <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 leading-tight animate-fadeUp">
+        <span className="text-white">Grow Your </span>
+        <span className="animate-shimmer">Business</span>
+        <br />
+        <span className="text-white">With </span>
+        <span className="text-yellow-400">Premium Design</span>
+      </h1>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeUp">
-            <a
-              href="https://wa.me/919380195144?text=Hi%20Abrar!%20I%20need%20a%20website%20for%20my%20business."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-300 transition-all hover:shadow-2xl hover:shadow-yellow-400/30 hover:scale-105 flex items-center justify-center gap-2"
-            >
-              💬 Get a Free Quote on WhatsApp
-            </a>
-            <Link
-              to="/websites"
-              className="px-8 py-4 glass gold-border text-white font-semibold rounded-full hover:bg-white/5 transition-all flex items-center justify-center gap-2"
-            >
-              See My Work <ArrowRight size={18} />
-            </Link>
-          </div>
+      <p className="text-gray-400 text-sm md:text-lg max-w-md mb-6 md:mb-10 animate-fadeUp">
+        I create <strong className="text-white">beautiful websites, brochures, banners & logos</strong> for startups and small businesses. 🚀
+      </p>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 animate-fadeUp">
-            {stats.map((s, i) => (
-              <div key={i} className="glass rounded-2xl p-4 gold-border">
-                <div className="font-display text-3xl font-bold text-yellow-400">
-                  {s.num}
-                </div>
-                <div className="text-gray-400 text-sm mt-1">{s.label}</div>
-              </div>
-            ))}
-          </div>
+      {/* CTA Buttons */}
+      <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fadeUp">
+        <a
+          href="https://wa.me/919380195144?text=Hi%20Abrar!%20I%20need%20a%20website%20for%20my%20business."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-5 py-3 md:px-8 md:py-4 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-300 transition-all hover:shadow-2xl hover:shadow-yellow-400/30 hover:scale-105 flex items-center justify-center gap-2 text-sm md:text-base"
+        >
+          💬 Free Quote
+        </a>
+        <Link
+          to="/websites"
+          className="px-5 py-3 md:px-8 md:py-4 glass gold-border text-white font-semibold rounded-full hover:bg-white/5 transition-all flex items-center justify-center gap-2 text-sm md:text-base"
+        >
+          See Work <ArrowRight size={18} />
+        </Link>
+      </div>
+    </div>
+
+    {/* RIGHT SIDE — IMAGE */}
+    <div className="flex justify-center md:justify-end">
+      <img
+        src="/hero-image.png"
+        alt="My design work"
+        className="w-full max-w-[180px] sm:max-w-[280px] md:max-w-[480px] drop-shadow-2xl animate-fadeUp"
+      />
+    </div>
+
+  </div>\
+
+  {/* Stats — full width below */}
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-10 md:mt-16 animate-fadeUp">
+    {stats.map((s, i) => (
+      <div key={i} className="glass rounded-2xl p-3 md:p-4 gold-border">
+        <div className="font-display text-xl md:text-3xl font-bold text-yellow-400">
+          {s.num}
         </div>
+        <div className="text-gray-400 text-xs md:text-sm mt-1">{s.label}</div>
+      </div>
+    ))}
+  </div>
+</div>
       </section>
 
       {/* ===== SERVICES SECTION ===== */}

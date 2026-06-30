@@ -66,3 +66,24 @@ body {
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #050508; }
 ::-webkit-scrollbar-thumb { background: #f5c842; border-radius: 4px; }
+@keyframes float {
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+.animate-float{
+
+animation:float 5s ease-in-out infinite;
+
+}
